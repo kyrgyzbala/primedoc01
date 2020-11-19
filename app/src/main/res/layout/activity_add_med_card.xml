@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.med_card.medcard.AddMedCardActivity">
+
+    <RelativeLayout
+        android:id="@+id/appBarMedCardAdd"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/arrBackMedCardAdd"
+                android:layout_width="64dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_back_blue" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_toEndOf="@+id/arrBackMedCardAdd"
+                android:fontFamily="@font/roboto"
+                android:text="@string/title_medcard_full"
+                android:textColor="@color/colorDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarMedCardAdd"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgViewMedCardAdd"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_camera_def" />
+
+            <EditText
+                android:id="@+id/userSurnameMedCardAdd"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/imgViewMedCardAdd"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:hint="@string/surname_hint"
+                android:textSize="14sp"
+                android:inputType="textPersonName"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp" />
+
+            <EditText
+                android:id="@+id/userNameMedCardAdd"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/userSurnameMedCardAdd"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:textSize="14sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:hint="@string/name_hint"
+                android:inputType="textPersonName"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp" />
+
+            <EditText
+                android:id="@+id/userFatherNameMedCardAdd"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/userNameMedCardAdd"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:textSize="14sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:hint="@string/midname_hint"
+                android:inputType="textPersonName"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp" />
+
+            <TextView
+                android:id="@+id/userBirthdayMedCardAdd"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/userFatherNameMedCardAdd"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:hint="@string/birth_hint"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="14sp"
+                app:drawableEndCompat="@drawable/ic_birthday_icon" />
+
+            <EditText
+                android:id="@+id/userPhoneNumberMedCardAdd"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/userBirthdayMedCardAdd"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:textSize="14sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:hint="@string/whatsapp_phone_hint"
+                android:inputType="phone"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp" />
+
+
+            <CheckBox
+                android:id="@+id/checkBoxPrivacyAddMedCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userPhoneNumberMedCardAdd"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="26sp"
+                android:layout_marginBottom="22sp"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/textViewTextText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userPhoneNumberMedCardAdd"
+                android:layout_marginTop="32dp"
+                android:layout_toEndOf="@+id/checkBoxPrivacyAddMedCard"
+                android:text="@string/textObrabot"
+                android:textColor="#CFC7C7"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewPersonalInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userPhoneNumberMedCardAdd"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="24dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_toEndOf="@+id/textViewTextText"
+                android:text="@string/personalInfo"
+                android:textColor="#21CEE0"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/buttonEditCardAdd"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_below="@+id/textViewPersonalInfo"
+                android:layout_marginStart="26sp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="26sp"
+                android:layout_marginBottom="18sp"
+                android:background="@drawable/button_backg"
+                android:fontFamily="@font/roboto"
+                android:text="@string/send_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/prBarMedCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLoading"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

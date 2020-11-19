@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/messageSentRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/back_sent_message"
+        android:minWidth="100dp">
+
+        <RelativeLayout
+            android:id="@+id/messageSentBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgCardViewSent"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:minWidth="100dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="12dp">
+
+                <ImageView
+                    android:id="@+id/imgViewMessageSent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxHeight="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_error"
+                    android:visibility="visible" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewMessageSent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgCardViewSent"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12sp"
+                android:layout_marginEnd="14dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                tools:text="This is a message This is a message This is a message" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/timeSentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageSentBody"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12sp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="#87000000"
+            android:textSize="12sp"
+            tools:text="12:10" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/messageReceivedRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageSentRelative"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/back_received_message"
+        android:minWidth="100dp">
+
+        <RelativeLayout
+            android:id="@+id/messageReceivedBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp">
+
+            <TextView
+                android:id="@+id/textViewMessageReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgCardViewReceived"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12sp"
+                android:layout_marginEnd="14dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                tools:text="This is a message This is a message This is a message" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgCardViewReceived"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="12dp">
+
+                <ImageView
+                    android:id="@+id/imgViewMessageReceived"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_error"
+                    android:visibility="visible" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/timeReceivedMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageReceivedBody"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12sp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="#87000000"
+            android:textSize="12sp"
+            tools:text="12:10" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

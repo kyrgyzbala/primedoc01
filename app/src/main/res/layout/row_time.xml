@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/timeCardViewRow"
+    android:layout_width="wrap_content"
+    android:layout_height="52dp"
+    android:layout_marginStart="9dp"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="#1A00BDD0"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="0dp">
+
+    <TextView
+        android:id="@+id/textViewTimeRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="12sp"
+        android:text="@string/_12_30"
+        android:textColor="#00BDD0"
+        android:textSize="16sp" />
+</androidx.cardview.widget.CardView>
+

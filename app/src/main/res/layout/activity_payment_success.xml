@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.clinic.detail.payment.PaymentSuccessActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/arrBackPaymentSuccess"
+            android:layout_width="52dp"
+            android:layout_height="52dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_back_blue" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgViewSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arrBackPaymentSuccess"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            android:src="@drawable/success" />
+
+        <TextView
+            android:id="@+id/textViewSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgViewSuccess"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/success"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/successTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSuccess"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/paymentAcceptedSuccess"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/buttonToMainSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/successTextView"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_backg"
+            android:text="@string/toMain"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</ScrollView>

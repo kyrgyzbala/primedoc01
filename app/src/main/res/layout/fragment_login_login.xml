@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <!--    tools:context=".ui.login.LoginLoginFragment">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+
+
+            <ImageView
+                android:id="@+id/logoImgViewCode"
+                android:layout_width="170dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="54dp"
+                android:src="@drawable/logo_primedoc" />
+
+            <TextView
+                android:id="@+id/textViewPwdSent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logoImgViewCode"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="26dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="@string/pwd_sent_to_number_text"
+                android:textColor="#6E6E6E"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPwdSentNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPwdSent"
+                android:layout_centerHorizontal="true"
+                android:textColor="#6E6E6E"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/pwdTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/textViewPwdSentNumber"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edittext_border">
+
+                <EditText
+                    android:id="@+id/pwdConfirmationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="#00000000"
+                    android:gravity="center_vertical"
+                    android:hint="@string/prompt_password"
+                    android:inputType="textPersonName"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="0dp"
+                    android:textColor="#12202E"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewEnterCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pwdTextInput"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="34dp"
+                android:gravity="center"
+                android:text="@string/enter_pwd_text"
+                android:textColor="#6E6E6E"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/nextButtonPwdConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="126dp"
+                android:background="@drawable/button_backg"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pBarCodeConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLoading"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

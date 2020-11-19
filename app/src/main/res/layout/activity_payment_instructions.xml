@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.clinic.detail.payment.PaymentInstructionsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarPayInts"
+        android:layout_width="match_parent"
+        android:layout_height="88dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/arrBackPayInts"
+                android:layout_width="62dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_back_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/titlePaymentPayInts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="62dp"
+                android:layout_toEndOf="@+id/arrBackPayInts"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="@string/paymentConsult"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/payViaEWalletTextViewPayInst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarPayInts"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14sp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/pay_via_ewallet_text"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgViewPayInst"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/payViaEWalletTextViewPayInst"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="22sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPayInst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewLine"
+        android:layout_below="@+id/imgViewPayInst"
+        android:layout_marginTop="12dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/nextSteps"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:background="#14000000" />
+
+    <ImageView
+        android:id="@+id/pinnedImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewLine"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/ic_pinned" />
+
+    <TextView
+        android:id="@+id/nextSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:layout_toEndOf="@+id/pinnedImgView"
+        android:fontFamily="@font/roboto"
+        android:text="@string/send_payment_check_text"
+        android:textColor="@color/colorDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

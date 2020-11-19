@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/expandButtonFaqRow"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_expand" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/questionFaqRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="21dp"
+        android:layout_toStartOf="@+id/expandButtonFaqRow"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Question" />
+
+    <TextView
+        android:id="@+id/answerTextViewFaqRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionFaqRow"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="21dp"
+        android:lineSpacingExtra="2dp"
+        android:textColor="#CC000000"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Да. PrimeDoc является телемедицинским проектом медицинского центра Prime Clinic и работает под лицензией НГМУ № 3419, 002583, от 24 августа 2018 года, выданной Министерством Здравоохранения Кыргызской Республики." />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/answerTextViewFaqRow"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:background="#17000000" />
+
+</RelativeLayout>

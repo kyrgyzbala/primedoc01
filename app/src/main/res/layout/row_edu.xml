@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/yearRowEdu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/colorDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="2017" />
+
+    <TextView
+        android:id="@+id/descEduRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yearRowEdu"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        tools:text="dahjdkamdnakdjadada" />
+
+
+</RelativeLayout>

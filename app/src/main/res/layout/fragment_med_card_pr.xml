@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.med_card.medcard.MedCardPrFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/appBarMedCard"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/profile"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarMedCard">
+
+        <RelativeLayout
+            android:id="@+id/relMedCardPr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativeMedCardExits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <View
+                    android:id="@+id/viewTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="27dp"
+                    android:background="#00BDD0" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgViewMedCardPr"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/viewTop"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="16sp"
+                    android:src="@drawable/ic_def_ava" />
+
+                <TextView
+                    android:id="@+id/userNameMedCardPr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewTop"
+                    android:layout_marginStart="23sp"
+                    android:layout_marginTop="16sp"
+                    android:layout_marginEnd="16sp"
+                    android:layout_toEndOf="@+id/imgViewMedCardPr"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/birthDayMedCardPr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userNameMedCardPr"
+                    android:layout_marginStart="23sp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="23sp"
+                    android:layout_toEndOf="@+id/imgViewMedCardPr"
+                    android:textColor="#87000000"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/viewBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/imgViewMedCardPr"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="#00BDD0" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/relAddMedCardAdd"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_marginStart="26sp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="26sp"
+                android:layout_marginBottom="22sp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/addMedCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_add_medcard" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/addMedcard"
+                    android:textColor="#B8B8B8"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/historyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="161dp"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingStart="0dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="16sp"
+                android:paddingBottom="12dp"
+                android:text="@string/history"
+                android:textColor="@color/colorDark"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/ic_arrow_forw" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_below="@+id/historyTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="16dp"
+                android:background="#EDEBEB" />
+
+            <TextView
+                android:id="@+id/upcomingTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/historyTextView"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingStart="0dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="16sp"
+                android:paddingBottom="12dp"
+                android:text="@string/upcoming"
+                android:textColor="@color/colorDark"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/ic_arrow_forw" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_below="@+id/upcomingTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="16dp"
+                android:background="#EDEBEB" />
+
+            <TextView
+                android:id="@+id/confirmedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upcomingTextView"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingStart="0dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="16sp"
+                android:paddingBottom="12dp"
+                android:text="@string/confirmed"
+                android:textColor="@color/colorDark"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/ic_arrow_forw" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_below="@+id/confirmedTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="#EDEBEB" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

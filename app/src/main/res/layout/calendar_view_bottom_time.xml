@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relTopCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_bottom_top">
+
+            <TextView
+                android:id="@+id/yearTextViewCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="17dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="#B2FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="2020" />
+
+            <TextView
+                android:id="@+id/dateTextViewCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yearTextViewCalendar"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="17dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Mon 13" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateTextViewCalendar"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="14sp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="15sp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/reserveConsultText"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relTopCal"
+            android:background="@color/colorWhite">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/arrBackTime"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="#1A00BDD0"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_back" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_below="@+id/arrBackTime">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12sp"
+                    android:layout_marginEnd="16dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="4" />
+            </ScrollView>
+
+
+            <TextView
+                android:id="@+id/dateTextViewTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="62dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_toEndOf="@+id/arrBackTime"
+                android:fontFamily="@font/roboto"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="daafafa" />
+
+
+            <TextView
+                android:id="@+id/okButtonCalendarViewTime"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/ok"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cancelButtonCalendarViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollView"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12sp"
+                android:layout_marginBottom="6dp"
+                android:layout_toStartOf="@+id/okButtonCalendarViewTime"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:padding="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="@string/cancel"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

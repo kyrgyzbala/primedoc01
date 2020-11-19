@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.login.PinConfirmActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgViewLogoPinTw0"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/logo_primedoc" />
+
+        <TextView
+            android:id="@+id/textViewPinTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgViewLogoPinTw0"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="26dp"
+            android:background="@color/colorWhite"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/pin_confirm_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pinDoesNotMatchTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPinTwo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="45dp"
+            android:gravity="center"
+            android:text="@string/entered_wrong_pin_text"
+            android:textColor="#ED5168"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relPinConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPinTwo"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:id="@+id/linearPinTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/dot1PinTwo"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_pin_inactive" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/dot2PinTwo"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="35dp"
+                    android:src="@drawable/ic_pin_inactive" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/dot3PinTwo"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="35dp"
+                    android:src="@drawable/ic_pin_inactive" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/dot4PinTwo"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="35dp"
+                    android:src="@drawable/ic_pin_inactive" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearPinTwo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="32dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button1PinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/_1"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/button2PinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/_2"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/button3PinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/_3"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button4PinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/_4"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/button5PinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/_5"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/button6PinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/_6"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button7PinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/_7"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/button8PinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/_8"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/button9PinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/_9"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/button0PinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="@string/_0"
+                        android:textColor="#656262"
+                        android:textSize="22sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/buttondelPinTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_delete_pin" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/forgotPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relPinConfirm"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto"
+            android:padding="4dp"
+            android:text="@string/forgotPin"
+            android:textColor="#00BDD0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

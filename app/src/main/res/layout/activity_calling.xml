@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.chat.CallingActivity">
+
+
+    <ImageView
+        android:id="@+id/imgViewCalling"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/large_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarUser"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/def_doctor" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatarUser"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginBottom="12sp"
+            android:gravity="center"
+            android:text="@string/doctor"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/callingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cancelCallButton"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginBottom="-14dp"
+            android:gravity="center"
+            android:text="@string/calling"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/cancelCallButton"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            android:src="@drawable/call_red" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgViewChatList"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/def_doctor" />
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/textViewDateChatList"
+        android:layout_toEndOf="@+id/imgViewChatList"
+        android:textColor="#2A0200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="texthjfnmd\nText\n" />
+
+    <TextView
+        android:id="@+id/textViewDateChatList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#8A000000"
+        android:textSize="12sp"
+        tools:text="12:00" />
+
+    <TextView
+        android:id="@+id/senderNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUserName"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/imgViewChatList"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="#8A000000"
+        android:textSize="16sp"
+        tools:text="Вы:" />
+
+    <TextView
+        android:id="@+id/lastMessageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUserName"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16sp"
+        android:layout_toEndOf="@+id/senderNameTextView"
+        android:textColor="#8A000000"
+        android:textSize="16sp"
+        tools:text="this is a messages" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lastMessageTextView"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="16sp"
+        android:background="#1A000000" />
+
+</RelativeLayout>

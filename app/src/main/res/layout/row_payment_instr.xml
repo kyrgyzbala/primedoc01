@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="13dp"
+    android:paddingBottom="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/numberCardViewRowPayment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginBottom="3dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="12.5dp">
+
+        <TextView
+            android:id="@+id/numberTextViewRowPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/_1" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/stepTextViewRowPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="16sp"
+        android:layout_toEndOf="@+id/numberCardViewRowPayment"
+        android:textColor="@color/colorDark"
+        android:textSize="16sp"
+        tools:text="@string/press_omoney_text" />
+
+
+</RelativeLayout>

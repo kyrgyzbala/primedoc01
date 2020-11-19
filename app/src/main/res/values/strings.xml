@@ -1,0 +1,266 @@
+<resources>
+    <string name="app_name">PrimeDoc</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="token_url">URL</string>
+    <string name="clinic">Клиника</string>
+    <string name="medCard">Медкарта</string>
+    <string name="chat">Чат</string>
+    <string name="faq">FAQ</string>
+    <string name="aboutUs">О нас</string>
+
+
+    <string name="title_faq_full">Часто задаваемые вопросы</string>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Зарегистрироваться</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="pin_text_one">Для безопасного входа, необходимо придумать код</string>
+    <string name="pin_confirm_text">Подтвердите PIN-код</string>
+    <string name="code_sent_to_number_text">Мы отправили SMS код на номер </string>
+    <string name="pwd_sent_to_number_text">Мы отправили SMS пароль на номер </string>
+    <string name="title_medcard_full">Медицинская карта</string>
+    <string name="title_online_consultation">Онлайн-консультация</string>
+    <string name="our_specs_text">Наши специалисты</string>
+    <string name="code_send_phone">На указаный номер телефона будет отправлен SMS-код подтверждения</string>
+    <string name="enter_code_text">Введите код подтверждения из полученного SMS-сообщения</string>
+    <string name="enter_pwd_text">Введите пароль из полученного SMS-сообщения</string>
+    <string name="forgot_pin_text">Забыли PIN-код?</string>
+    <string name="code_not_received_text">Я не получил(а) код</string>
+    <string name="next_text">Далее</string>
+    <string name="code_confirmation_hint_text">Код подтверждения</string>
+    <string name="phone_number_hint_text">Номер телефона</string>
+    <string name="phone_number_hint_text_required">Номер телефона*</string>
+    <string name="comment_edittext_hint">Оставьте комментарий</string>
+    <string name="book_button_text">Забронировать</string>
+    <string name="payment_comment_text">Для подтверждения приема, вам необходимо совершить оплату указанными ниже способами</string>
+    <string name="enter_primedoc_text">Вход в Primedoc</string>
+    <string name="book_visit_text">Оформление визита</string>
+    <string name="pay_via_ewallet_text">Оплата через электронный кошелёк</string>
+    <string name="open_balance_text">Откройте мобильное приложение Balance;</string>
+    <string name="press_service_balance_text">Нажмите на кнопку \"Услуги\";</string>
+    <string name="find_search_balance_text">В правом верхнем углу найдите иконку \"Поиска\" и впишите туда \"PrimeDoc\";</string>
+    <string name="press_primedoc_balance_text">Появится \"PimeDoc\". Нажмите на него;</string>
+    <string name="pay_primedoc_balance">В поле \"Реквизит\" напишите своё Ф.И.О. В поле \"Сумма\" введите 250 и нажмите на кнопку \"Оплатить\".</string>
+    <string name="send_payment_check_text">После оплаты, отправьте чек в чат. Врач-администратор сделает подтверждение приема.</string>
+    <string name="open_omoney_text">Откройте мобильное приложение О Деньги!;</string>
+    <string name="press_omoney_text">В нижнем меню нажмите на кнопку \"О!Деньги\";</string>
+    <string name="search_omoney_text">Далее нажмите на кнопку \"Поиск по каталогу\" и впишите туда \"PrimeDoc\";</string>
+    <string name="enter_primedoc_in_omoney_text">Появится \"PimeDoc\". Нажмите на него;</string>
+    <string name="pay_primedoc_in_omoney_text">В поле \"Сумма\" введите 250 и нажмите на кнопку \"Оплатить\". В поле \"Введите реквизит\" ничего не надо вводить - там по умолчанию будет стоять ваш номер телефона;</string>
+    <string name="open_megapay_text">Откройте мобильное приложение MegaPay;</string>
+    <string name="press_service_megapay_text">Нажмите на кнопку \"Оплата услуг\";</string>
+    <string name="find_health_in_megapay_text">Найдите раздел \"Здоровье\" и выберете его;</string>
+    <string name="press_primedoc_in_megapay_text">В открывшемся окне появится \"PrimeDoc\". Нажмите на него;</string>
+    <string name="pay_primedoc_in_megapay_text">В поле \"Реквизит\" напишите своё Ф.И.О. В поле \"Сумма оплаты\" введите 250 и нажмите на кнопку \"Оплатить\".</string>
+    <string name="payment_method_unavailable_text">Этот способ оплаты временно недоступен</string>
+    <string name="agreement_checkbox_text">Соглашение на обработку <u>персональных данных</u></string>
+    <string name="agreement_text">1. Правовые основания обработки персональных данных Правовыми основаниями обработки персональных данных являются, в частности, части 1, 5 пункта 1 статьи 6 Федерального закона РФ «О персональных данных».\n\n2. Основные понятия и термины Мобильное приложение системы управления очередью ДАМАСК – программное обеспечение, предназначенное для работы на мобильных устройствах, обеспечивающее пользователю возможность использования систем управления очередью организаций — партнеров. Администратором мобильного приложения является ООО</string>
+    <string name="surname_hint">*Фамилия</string>
+    <string name="name_hint">*Имя</string>
+    <string name="midname_hint">Отчество</string>
+    <string name="birth_hint">*Дата рождения</string>
+    <string name="whatsapp_phone_hint">WhatsApp номер</string>
+    <string name="send_text">Отправить</string>
+    <string name="enter_valid_name_error">Введите верное имя</string>
+    <string name="enter_valid_surname_error">Введите верную фамилию</string>
+    <string name="enter_valid_datebirth_error">Введите верную дату рождения</string>
+    <string name="agreement_absent">Отсутствует соглашение на обработку данных</string>
+    <string name="entered_wrong_pin_text">Вы ввели неверный код, пожалуйста введите код еще раз</string>
+    <string name="birthdate_text">Дата рождения:\t</string>
+    <string name="phonenumber_text">WhatsApp номер:\t</string>
+    <string name="undefined_phonenumber">не указан</string>
+    <string name="enter_valid_data_text">Введите верные данные!</string>
+    <string name="channel_name">Payment verification</string>
+    <string name="channel_description">The notification message that describes that the payment was carried successfully</string>
+    <string name="send_message_hint">Введите сообщение…</string>
+    <string name="phoneNumberFormatError">Формат номера телефона должен быть 996ХХХ-ХХХ-ХХХ</string>
+
+    <!--           Twilio shit strings.              -->
+    <!-- Strings related to login -->
+    <string name="title_activity_main_chat">General Channel</string>
+    <string name="username_placeholder">username</string>
+    <string name="password_placeholder">password</string>
+    <string name="full_name_placeholder">full name</string>
+    <string name="email_placeholder">email address</string>
+    <string name="twilio_first_line">A simple chat app built using the</string>
+    <string name="twilio_second_line">Twilio Chat API</string>
+    <string name="login_all_fields_required">All fields are required</string>
+    <string name="login_user_progress_message">signing in…</string>
+    <string name="register_user_progress_message">registering user…</string>
+
+    <!-- Strings related to forgot password -->
+    <string name="forgot_password_message">
+        That\'s okay. Just enter your email and we\'ll send you a link to reset your password.
+    </string>
+    <string name="forgot_password_send_button_text">Send</string>
+    <string name="forgot_password_go_back_button_text">\u003c Go back</string>
+    <string name="forgot_password_email_required">
+        You must provide a registered email address to start the recovery process
+    </string>
+    <string name="forgot_password_progress_message">recovering password…</string>
+    <string name="forgot_password_success_message">
+        We have sent you an email to start the password recovery process
+    </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="logout_text">Logout</string>
+
+    <string name="logout_prompt_message">Are you sure you want to logout?</string>
+    <string name="action_leave_channel">Leave channel</string>
+    <string name="action_delete_channel">Delete channel</string>
+    <string name="message_elipses">Say something</string>
+    <string name="logo_text">logo</string>
+    <string name="login_button_text">Login</string>
+    <string name="register_button_text">Register</string>
+    <string name="forgot_password_button_text">Forgot your password?</string>
+    <string name="create_account_button_text">Create an account</string>
+    <string name="back_to_login_button_text">Back to login</string>
+    <string name="image_text">image</string>
+
+    <string name="default_channel_name">General Channel</string>
+    <string name="default_channel_unique_name">general</string>
+    <string name="new_channel_prompt">Enter a name for the new channel:</string>
+    <string name="generic_error">An error occurred, please try again</string>
+    <string name="message_deletion_forbidden">You cannot delete this channel</string>
+    <string name="loading_channels_message">Loading channel information</string>
+    <string name="channel_name_required_message">Channel name cannot be empty</string>
+    <string name="channel_delete_prompt_message">Are you sure you want to delete this channel?</string>
+    <string name="channel_name_equals_default_name">You cannot create a channel with the default channel\'s name</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_9">9</string>
+    <string name="_8">8</string>
+    <string name="_7">7</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="pinDoesntmatch">Пин не сопадает</string>
+    <string name="paymentConsult">Оплата консультации</string>
+    <string name="whatHeDoesText">Что лечит</string>
+    <string name="aboutDoctor">О враче</string>
+    <string name="education">Образование:</string>
+    <string name="reserve">Записаться</string>
+    <string name="reserveConsultText">Записаться на консультацию</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="_08_00">08:00</string>
+    <string name="_08_30">08:30</string>
+    <string name="_09_00">09:00</string>
+    <string name="_09_30">09:30</string>
+    <string name="_10_00">10:00</string>
+    <string name="_10_30">10:30</string>
+    <string name="_11_00">11:00</string>
+    <string name="_11_30">11:30</string>
+    <string name="_12_30">12:30</string>
+    <string name="_13_00">13:00</string>
+    <string name="_13_30">13:30</string>
+    <string name="_14_00">14:00</string>
+    <string name="_14_30">14:30</string>
+    <string name="_15_00">15:00</string>
+    <string name="_15_30">15:30</string>
+    <string name="reservedCons">Вы записались на прием</string>
+    <string name="edit">Редактировать</string>
+    <string name="addPhoto">Добавить фото</string>
+    <string name="chooseFromGallery">Выбрать из галереи</string>
+    <string name="textObrabot">Соглашение на обработку</string>
+    <string name="textObrabot2">Я согласен с условиями</string>
+    <string name="personalInfo"><u>персональных данных</u></string>
+    <string name="personalInfo2"><u>договора оферты</u></string>
+    <string name="addMedcard">Добавить медицинскую карту</string>
+    <string name="nowCanWrite">Чат начался, теперь вы можете задавать свои вопросы</string>
+    <string name="admin">Админ</string>
+    <string name="you">Вы:</string>
+    <string name="doctor">Доктор</string>
+    <string name="online">в сети</string>
+    <string name="whatIsPrimedoc">Что такое PrimeDoc?</string>
+    <string name="aboutPrimeDoc">PrimeDoc - это сервис для удалённых онлайн-консультаций с опытными врачами. Вы можете выбрать нужного врача и проконсультироваться с ним через телефон, планшет или ноутбук. При этом, ваше расположение не имеет значения.</string>
+    <string name="phoneNumbers">+996 777 988 978 \n+996 556 988 978 \n+996 312 988 978</string>
+    <string name="office_prime_kg">office@prime.kg</string>
+    <string name="addressPrimeDoc">г.Бишкек, ул.Боконбаева 202 (пер.ул.Уметалиева)</string>
+    <string name="agreementText"><u>Договор на оказание платных медицинских услуг</u></string>
+    <string name="requiredField">Это обьязательное поле</string>
+    <string name="login">Войти</string>
+    <string name="_0">0</string>
+
+    <string name="mon">Пн</string>
+    <string name="tue">Вт</string>
+    <string name="wed">Ср</string>
+    <string name="thu">Чт</string>
+    <string name="fri">Пт</string>
+    <string name="sat">Суб</string>
+    <string name="sun">Вс</string>
+
+    <string name="jan">Января</string>
+    <string name="feb">Февраля</string>
+    <string name="march">Марта</string>
+    <string name="apr">Аперля</string>
+    <string name="may">Мая</string>
+    <string name="june">Июня</string>
+    <string name="july">Июля</string>
+    <string name="aug">Августа</string>
+    <string name="sep">Сентября</string>
+    <string name="oct">Октября</string>
+    <string name="nov">Ноября</string>
+    <string name="dec">Декабря</string>
+    <string name="ourDoctors">Наши врачи</string>
+
+    <string name="selectBirthDayError">Пожалуйста выберите дату рождения!</string>
+    <string name="uploadPhotoError">Пожалуйста загрузите фото!</string>
+    <string name="pleaseReadPrivacy">Вам необходимо прочитать и согласиться с условиями об обработке персоналбных данных</string>
+    <string name="pleaseReadPrivacy2">Вам необходимо прочитать и согласиться с условиями договора оферты</string>
+    <string name="pleaseReadFraud">Вам необходимо прочитать и согласиться с договором оферты</string>
+    <string name="photo">Фото</string>
+    <string name="calling">Идёт звонок…</string>
+    <string name="incomingCall">Входящий звонок…</string>
+    <string name="choosePicture">Выберите фото</string>
+    <string name="photoUploadedSuccess">Фото успешно обновлено</string>
+    <string name="chooseProperDate">Пожалуйста, выберите правильную дату!</string>
+    <string name="medCardUpdateSuccess">Ваша мед карта успешно обновлена!</string>
+    <string name="default_notification_channel_id">default_notification_channel_id</string>
+    <string name="profile">Профиль</string>
+    <string name="history">Проведенные консультации</string>
+    <string name="upcoming">Ожидаемые консультации</string>
+    <string name="confirmed">Подтвержденные консультации</string>
+    <string name="receipt"><u>Чек</u></string>
+    <string name="receiptNoU">Чек</string>
+    <string name="enterCardDetails">Введите платежные данные</string>
+    <string name="cardNumber">Номер карты</string>
+    <string name="cardNumber2">Последние 4 цифры номера карты</string>
+    <string name="cardNumberHit">0000 0000 0000 0000</string>
+    <string name="cardNumberHit2">0000</string>
+    <string name="expDate">Срок действия</string>
+    <string name="mm">ММ/ГГ</string>
+    <string name="_123">123</string>
+    <string name="code">Код</string>
+    <string name="cardHolder">Владелец карты</string>
+    <string name="fullName">ФИО</string>
+    <string name="emailForReceipt">Электронная почта для чека</string>
+    <string name="iAgree">Я согласен с условиями</string>
+    <string name="fraudAgreement"><u>договора оферты</u></string>
+    <string name="pay">Оплатить</string>
+    <string name="cardLengthError">Должен состоять из 16 чисел</string>
+    <string name="cardLengthError2">Должен состоять из 4 чисел</string>
+    <string name="empty">Пусто</string>
+    <string name="cardPayment">Оплата с картой</string>
+    <string name="errorTryAgain">Произошла ошибка, Пожалуйста повторите заново</string>
+    <string name="success">Успешно</string>
+    <string name="paymentAcceptedSuccess">Ваш платеж успешно произведен</string>
+    <string name="toMain">На главную</string>
+    <string name="error">Ошибка</string>
+    <string name="paymentAcceptedFail">"Ваш платеж не был произведен Попробуйте еще раз "</string>
+    <string name="goBack">Вернуться</string>
+    <string name="forgotPin">Забыли PIN-код?</string>
+    <string name="recoverPin">Восстановление пин кода</string>
+    <string name="getCode">Получить код</string>
+    <string name="cantWrite">Вы не можете отправить сообщения до начала чата</string>
+
+</resources>

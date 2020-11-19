@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgViewDocRow"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_def_ava"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:id="@+id/doctorNameTextViewRowDoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginEnd="18sp"
+        android:layout_toEndOf="@+id/imgViewDocRow"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/colorDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/docCatRowDoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctorNameTextViewRowDoc"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toEndOf="@+id/imgViewDocRow"
+        android:textColor="#80000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/docExpRowDoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/docCatRowDoc"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/imgViewDocRow"
+        android:textColor="#80000000"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/docExpRowDoc"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#14000000" />
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "kg.kyrgyzcoder.primedoc01"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 9
+        versionName "1.07"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+
+    implementation 'com.google.firebase:firebase-firestore:21.6.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:6.2.1'
+
+    // FirebaseUI for Cloud Firestore
+    implementation 'com.firebaseui:firebase-ui-firestore:6.2.1'
+
+    // FirebaseUI for Firebase Auth
+    implementation 'com.firebaseui:firebase-ui-auth:6.2.1'
+
+    // FirebaseUI for Cloud Storage
+    implementation 'com.firebaseui:firebase-ui-storage:6.2.1'
+
+    //circular imageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Design and CardView
+    def design_version = "28.0.0"
+    implementation "com.android.support:design:$design_version"
+    implementation "com.google.android.material:material:1.3.0-alpha03"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.google.android.material:material:1.2.1'
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
+    // Gson
+    implementation "com.google.code.gson:gson:2.8.6"
+
+    // Kotlin Android Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.7"
+
+
+    // Kodein
+    implementation "org.kodein.di:kodein-di-generic-jvm:5.2.0"
+    implementation "org.kodein.di:kodein-di-framework-android-x:5.2.0"
+
+
+    // Multidex
+    implementation "androidx.multidex:multidex:2.0.1"
+
+    //logging interceptor
+    implementation "com.squareup.okhttp3:logging-interceptor:4.8.1"
+
+    //firebase
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+// Country Code Picker
+    implementation 'com.hbb20:ccp:2.2.3'
+    // Circular progress bar
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
+
+    // To load GIF format image
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+
+    //CalendarView
+    implementation 'com.squareup:android-times-square:1.6.5@aar'
+
+    //ImagePicker
+    implementation 'com.opensooq.supernova:gligar:1.1.0'
+
+    //Twilio
+    implementation 'com.twilio:chat-android:6.1.0'
+
+    implementation 'joda-time:joda-time:2.9.1'
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.1'
+
+    //PhotoView
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    //videoStream
+    implementation 'com.opentok.android:opentok-android-sdk:2.15.3'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    implementation 'com.github.esafirm.android-image-picker:imagepicker:2.3.0'
+
+
+}

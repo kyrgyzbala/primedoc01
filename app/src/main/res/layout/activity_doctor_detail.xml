@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.clinic.detail.DoctorDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/reserveButtonDoc"
+            android:layout_marginBottom="6dp"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/appBarDoctorDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <RelativeLayout
+                        android:id="@+id/arrBackDoctorDetail"
+                        android:layout_width="52dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="18dp"
+                            android:src="@drawable/ic_arrow_back_blue" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgViewAvatarDoctor"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/appBarDoctorDetail"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_def_ava" />
+
+                <TextView
+                    android:id="@+id/doctorNameTextViewDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appBarDoctorDetail"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="16sp"
+                    android:layout_toEndOf="@+id/imgViewAvatarDoctor"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:text="TextUserName" />
+
+                <TextView
+                    android:id="@+id/textViewDoctorCateg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/doctorNameTextViewDoctor"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="16sp"
+                    android:layout_toEndOf="@+id/imgViewAvatarDoctor"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#80000000"
+                    android:textSize="16sp"
+                    tools:text="dadada" />
+
+                <TextView
+                    android:id="@+id/textViewDoctorExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewDoctorCateg"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16sp"
+                    android:layout_toEndOf="@+id/imgViewAvatarDoctor"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#80000000"
+                    android:textSize="16sp"
+                    tools:text="dadada" />
+
+                <View
+                    android:id="@+id/viewLineDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/textViewDoctorExperience"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#00BDD0" />
+
+                <TextView
+                    android:id="@+id/aboutDocTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewLineDoc"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="32dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/aboutDoctor"
+                    android:textColor="#00BDD0"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/aboutDoctorDescTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutDocTextView"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/colorDark"
+                    android:textSize="16sp"
+                    tools:text="dadadadadadadadadadada" />
+
+                <TextView
+                    android:id="@+id/eduTextTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutDoctorDescTextView"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/education"
+                    android:textColor="#00BDD0"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewDoctorEdu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eduTextTextView"
+                    android:layout_marginTop="6dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/reserveButtonDoc"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_backg"
+            android:elevation="6dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/reserve"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pBarDoctorDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLoading"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.med_card.medcard.MedCardDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/appBarMedCardDetail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/arrBackMedCardDetail"
+                android:layout_width="64dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_back_blue" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_toEndOf="@+id/arrBackMedCardDetail"
+                android:fontFamily="@font/roboto"
+                android:text="@string/title_medcard_full"
+                android:textColor="@color/colorDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonEditCardDetail"
+        android:layout_below="@+id/appBarMedCardDetail">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgViewMedCardDetail"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_def_ava" />
+
+            <TextView
+                android:id="@+id/userNameMedCardDetail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/userSurnameMedCardDetail"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp" />
+
+            <TextView
+                android:id="@+id/userSurnameMedCardDetail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/imgViewMedCardDetail"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp" />
+
+            <TextView
+                android:id="@+id/userFatherNameMedCardDetail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/userNameMedCardDetail"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp" />
+
+            <TextView
+                android:id="@+id/userBirthdayMedCardDetail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/userFatherNameMedCardDetail"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                app:drawableEndCompat="@drawable/ic_birthday_icon" />
+
+            <TextView
+                android:id="@+id/userPhoneNumberMedCardDetail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/userBirthdayMedCardDetail"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginBottom="22sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonEditCardDetail"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="22sp"
+        android:layout_marginEnd="26sp"
+        android:layout_marginBottom="18sp"
+        android:background="@drawable/button_backg"
+        android:fontFamily="@font/roboto"
+        android:text="@string/edit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

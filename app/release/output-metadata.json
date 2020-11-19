@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "kg.kyrgyzcoder.primedoc01",
+  "variantName": "processReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 9,
+      "versionName": "1.07",
+      "outputFile": "app-release.apk"
+    }
+  ]
+}

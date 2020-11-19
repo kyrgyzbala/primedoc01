@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".util.DocActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarDoc"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/arrBackDoc"
+                android:layout_width="52dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_back_white" />
+
+            </RelativeLayout>
+
+            <Toolbar
+                android:id="@+id/titleDocTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="52dp"
+                android:layout_marginEnd="52dp"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:titleTextColor="@color/colorWhite"
+                tools:title="Text" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <WebView
+        android:id="@+id/webViewDoc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarDoc" />
+
+</RelativeLayout>

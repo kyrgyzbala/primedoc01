@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.login.CodeConfirmationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+
+
+            <ImageView
+                android:id="@+id/logoImgViewCode"
+                android:layout_width="170dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="54dp"
+                android:src="@drawable/logo_primedoc" />
+
+            <TextView
+                android:id="@+id/textViewCodeSent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logoImgViewCode"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="26dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="@string/code_sent_to_number_text"
+                android:textColor="#6E6E6E"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCodeSentNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCodeSent"
+                android:layout_centerHorizontal="true"
+                android:textColor="#6E6E6E"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/codeTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/textViewCodeSentNumber"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edittext_border">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/codeConfirmationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:hint="@string/code_confirmation_hint_text"
+                    android:inputType="number"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="0dp"
+                    android:textColor="#12202E"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewEnterCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/codeTextInput"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="34dp"
+                android:gravity="center"
+                android:text="@string/enter_code_text"
+                android:textColor="#6E6E6E"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/codeNotReceivedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/nextButtonCodeConfirm"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="28dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="@string/code_not_received_text"
+                android:textColor="#00BDD0"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nextButtonCodeConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="126dp"
+                android:background="@drawable/button_backg"
+                android:text="@string/next_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pBarCodeConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLoading"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.clinic.detail.payment.PaymentFailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/arrowBackPaymentFail"
+            android:layout_width="52dp"
+            android:layout_height="52dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_back_blue" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgViewFail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arrowBackPaymentFail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:src="@drawable/fail" />
+
+        <TextView
+            android:id="@+id/textViewFail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgViewFail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/error"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/successTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewFail"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="@string/paymentAcceptedFail"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/buttonBackFail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/successTextView"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_backg"
+            android:text="@string/goBack"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>
